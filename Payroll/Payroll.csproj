@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{42FA8572-6420-4A95-BBC1-1E6B7C652436}</ProjectGuid>
+    <ProjectGuid>{BF338408-07A3-4120-8478-178153BFE833}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_2002807_Maeda_Employee</RootNamespace>
-    <AssemblyName>2002807_Maeda_Employee</AssemblyName>
+    <RootNamespace>Payroll</RootNamespace>
+    <AssemblyName>Payroll</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,10 +53,20 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hours.Designer.cs">
+      <DependentUpon>Hours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayRoll.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hours.resx">
+      <DependentUpon>Hours.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
